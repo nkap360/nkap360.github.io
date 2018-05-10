@@ -1,0 +1,39 @@
+# Site settings
+title: NKAP 360
+email:nkap.solution@gmail.com
+description: La solution intelligente d'éco-satisfaction DPC.
+
+baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+url: "https://nkap360.github.io" # the base hostname & protocol for your site
+
+#Google Ad Words Data from scripts code (using Google responsive options) and ad client
+data-ad-slot: 5891215695
+data-ad-client: ca-pub-0626850890336955
+google_ad_client: ca-pub-0626850890336955
+
+google_analytics: "UA-118953090-1"
+addthis_id: ra-5af3db4b0cb3c302
+disqus_account: nkap360
+
+# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
+social:
+  - title: twitter
+    url: https://twitter.com/nkap360
+  - title: facebook
+    url: https://facebook.com/nkap360
+  - title: google-plus
+    url: https://plus.google.com/+nkap360
+  #- title: github
+  #  url: http://github.com/nkap360
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
+# Build settings
+
+ 
