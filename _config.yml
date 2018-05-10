@@ -1,6 +1,6 @@
 # Site settings
 title: NKAP 360
-email:"nkap.solution@gmail.com"
+email: "nkap.solution@gmail.com"
 description: "La solution intelligente d'éco-satisfaction DPC."
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
