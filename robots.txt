@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://tc9011.com/sitemap.xml
-Sitemap: https://tc9011.com/baidusitemap.xml
+Sitemap: https://nyami.com/sitemap.xml
+Sitemap: https://nyami.com/baidusitemap.xml

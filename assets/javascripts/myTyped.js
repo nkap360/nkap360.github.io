@@ -1,1 +1,1 @@
-var t=new Typed(".element",{strings:["Welcome to tc9011'notes.","欢迎来到tc9011's notes."],typeSpeed:70});
+var t=new Typed(".element",{strings:["Welcome to nyami'notes.","欢迎来到nyami's notes."],typeSpeed:70});

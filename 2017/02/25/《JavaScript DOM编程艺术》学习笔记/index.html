@@ -123,23 +123,23 @@
   <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《JavaScript DOM编程艺术》学习笔记">
-<meta property="og:url" content="https://tc9011.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/index.html">
-<meta property="og:site_name" content="tc9011&#39;s">
+<meta property="og:url" content="https://nyami.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/index.html">
+<meta property="og:site_name" content="nyami&#39;s">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://tc9011.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170213248375099247.jpg">
-<meta property="og:image" content="https://tc9011.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170219637762017-02-19_15-08-01.png">
-<meta property="og:image" content="https://tc9011.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170331149096012698856.png">
+<meta property="og:image" content="https://nyami.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170213248375099247.jpg">
+<meta property="og:image" content="https://nyami.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170219637762017-02-19_15-08-01.png">
+<meta property="og:image" content="https://nyami.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170331149096012698856.png">
 <meta property="og:updated_time" content="2019-01-29T03:49:55.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《JavaScript DOM编程艺术》学习笔记">
-<meta name="twitter:image" content="https://tc9011.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170213248375099247.jpg">
+<meta name="twitter:image" content="https://nyami.com/assets/images/《JavaScript%20DOM编程艺术》学习笔记/20170213248375099247.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="https://tc9011.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/">
+  <link rel="canonical" href="https://nyami.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/">
 
 
 
@@ -149,7 +149,7 @@
   };
 </script>
 
-  <title>《JavaScript DOM编程艺术》学习笔记 | tc9011's</title>
+  <title>《JavaScript DOM编程艺术》学习笔记 | nyami's</title>
   
 
 
@@ -206,7 +206,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">tc9011's</span>
+        <span class="site-title">nyami's</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -348,16 +348,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tc9011.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/">
+    <link itemprop="mainEntityOfPage" href="https://nyami.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="tc9011">
+      <meta itemprop="name" content="nyami">
       <meta itemprop="description" content="释放精神的桎梏">
       <meta itemprop="image" content="/assets/20161109360612.JPG">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="tc9011's">
+      <meta itemprop="name" content="nyami's">
     </span>
 
     
@@ -449,7 +449,7 @@
       
         <p><img src="/assets/images/《JavaScript DOM编程艺术》学习笔记/20170213248375099247.jpg" alt="20170213248375099247.jpg"></p>
 <a id="more"></a>
-<p id="div-border-left-green">本书大部分demo参见<a href="https://github.com/tc9011/DOM-Scripting-Demo" rel="external nofollow noopener noreferrer" target="_blank">DOM Scripting Demo</a>，本人手敲，如有错误欢迎提交pr</p>
+<p id="div-border-left-green">本书大部分demo参见<a href="https://github.com/nyami/DOM-Scripting-Demo" rel="external nofollow noopener noreferrer" target="_blank">DOM Scripting Demo</a>，本人手敲，如有错误欢迎提交pr</p>
 
 <h2 id="JavaScript语法"><a href="#JavaScript语法" class="headerlink" title="JavaScript语法"></a>JavaScript语法</h2><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Test<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>把<code>&lt;script&gt;</code>标签放在HTML文档最后，<code>&lt;/body&gt;</code>标签之前，这样即使加载脚本时，Windows对象的load事件依然可以执行对文档进行的各种操作。</p>
@@ -496,7 +496,7 @@
 <h3 id="应用这个JavaScript函数"><a href="#应用这个JavaScript函数" class="headerlink" title="应用这个JavaScript函数"></a>应用这个JavaScript函数</h3><h4 id="事件处理函数"><a href="#事件处理函数" class="headerlink" title="事件处理函数"></a>事件处理函数</h4><p id="div-border-left-green">事件处理函数的工作机制：在给某个元素添加事件处理函数后，一旦事件发生，相应的JavaScript代码就会得到执行。被调用的JavaScript代码可以返回一个值，这个值将被传递给那个事件处理函数。</p>
 
 <p>例如：给某个链接添加一个<code>onclick</code>事件处理函数，<code>onclick</code>事件处理函数所触发的JavaScript代码会返回<code>false</code>或者<code>true</code>。当这个链接被点击时，如果那段JavaScript代码返回的是<code>true</code>，<code>onclick</code>事件处理函数就认为”这个链接被点击了“；反之，如果返回值是<code>false</code>,<code>onclick</code>事件处理函数就认为”这个链接没有被点击“。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--当点击时，返回的是false，链接的默认行为没有被触发--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://tc9011.com"</span> <span class="attr">onclick</span>=<span class="string">"return false"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--当点击时，返回的是false，链接的默认行为没有被触发--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://nyami.com"</span> <span class="attr">onclick</span>=<span class="string">"return false"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="对这个函数进行扩展"><a href="#对这个函数进行扩展" class="headerlink" title="对这个函数进行扩展"></a>对这个函数进行扩展</h3><h4 id="childNodes属性"><a href="#childNodes属性" class="headerlink" title="childNodes属性"></a>childNodes属性</h4><p>在一颗节点树上，<code>childNodes</code>属性可以获取任何一个元素的所有子元素，它是一个包含这个元素全部子元素的数组。</p>
 <h4 id="nodeType属性"><a href="#nodeType属性" class="headerlink" title="nodeType属性"></a>nodeType属性</h4><p>每个节点都有<code>nodeType</code>属性，<code>nodeType</code>的值是一个数字：</p>
 <ul>
@@ -517,9 +517,9 @@
 <li>第三个参数是一个以逗号分隔的字符串，其内容是新窗口的各种属性。</li>
 </ul>
 <h4 id="”javascript-“伪协议"><a href="#”javascript-“伪协议" class="headerlink" title="”javascript:“伪协议"></a>”javascript:“伪协议</h4><p>”javascript:“伪协议让我们通过一个链接来调用JavaScript函数。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:popUp("</span><span class="attr">http:</span>//<span class="attr">tc9011.com</span>");"&gt;</span>tc9011.com<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:popUp("</span><span class="attr">http:</span>//<span class="attr">nyami.com</span>");"&gt;</span>nyami.com<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><span id="inline- red">在HTML文档中通过”javascript:“伪协议调用JavaScript代码的做法非常不好。</span></p>
-<h3 id="分离JavaScript"><a href="#分离JavaScript" class="headerlink" title="分离JavaScript"></a>分离JavaScript</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://tc9011.com"</span> <span class="attr">onclick</span>=<span class="string">"popUp(this.href);return false"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="分离JavaScript"><a href="#分离JavaScript" class="headerlink" title="分离JavaScript"></a>分离JavaScript</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://nyami.com"</span> <span class="attr">onclick</span>=<span class="string">"popUp(this.href);return false"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>JavaScript语言不要求事件必须在HTML文档里处理（如上面的<code>onclick</code>事件可以分离到外部JavaScript文件中。），可以在外部的JavaScript文件里面把一个事件添加到HTML文档中某个元素上。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getElementById(id).event = active</span><br></pre></td></tr></table></figure>
 <p>如果涉及多个元素，可以用<code>getElementsByTagName</code>和<code>getAttribute</code>把事件添加到有着特定属性的一组元素上：</p>
@@ -683,7 +683,7 @@
     
       <div>
         <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/assets/20170708149950994182145.jpg" alt="tc9011 wechat" style="width: 200px; max-width: 100%">
+    <img id="wechat_subscriber_qcode" src="/assets/20170708149950994182145.jpg" alt="nyami wechat" style="width: 200px; max-width: 100%">
     <div>欢迎订阅我的微信公众号</div>
 </div>
 
@@ -701,14 +701,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/assets/20170313148941207221533.png" alt="tc9011 微信支付">
+        <img id="wechat_qr" src="/assets/20170313148941207221533.png" alt="nyami 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/assets/20170313148941208922392.png" alt="tc9011 支付宝">
+        <img id="alipay_qr" src="/assets/20170313148941208922392.png" alt="nyami 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -725,10 +725,10 @@
       <div>
         <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>tc9011</li>
+    <strong>本文作者： </strong>nyami</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tc9011.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/" title="《JavaScript DOM编程艺术》学习笔记">https://tc9011.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/</a>
+    <a href="https://nyami.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/" title="《JavaScript DOM编程艺术》学习笔记">https://nyami.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noopener noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -839,9 +839,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/assets/20161109360612.JPG" alt="tc9011">
+              <img class="site-author-image" itemprop="image" src="/assets/20161109360612.JPG" alt="nyami">
             
-              <p class="site-author-name" itemprop="name">tc9011</p>
+              <p class="site-author-name" itemprop="name">nyami</p>
               <p class="site-description motion-element" itemprop="description">释放精神的桎梏</p>
           </div>
 
@@ -992,22 +992,22 @@
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="https://github.com/tc9011" target="_blank" title="GitHub" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/nyami" target="_blank" title="GitHub" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-github"></i>GitHub</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://instagram.com/tc9011" target="_blank" title="Instagram" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  <a href="https://instagram.com/nyami" target="_blank" title="Instagram" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="http://www.zhihu.com/people/tc9011" target="_blank" title="知乎" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-globe"></i>知乎</a>
+                  <a href="http://www.zhihu.com/people/nyami" target="_blank" title="知乎" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-globe"></i>知乎</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="mailto:tc9011@126.com" target="_blank" title="E-Mail" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:nyami@126.com" target="_blank" title="E-Mail" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
@@ -1062,7 +1062,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">tc9011</span>
+  <span class="author" itemprop="copyrightHolder">nyami</span>
 
   
 
@@ -1214,13 +1214,13 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'https://tc9011.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/';
+        this.page.url = 'https://nyami.com/2017/02/25/《JavaScript DOM编程艺术》学习笔记/';
         this.page.identifier = '2017/02/25/《JavaScript DOM编程艺术》学习笔记/';
         this.page.title = '《JavaScript DOM编程艺术》学习笔记';
         };
       function loadComments () {
         var d = document, s = d.createElement('script');
-        s.src = 'https://tc9011.disqus.com/embed.js';
+        s.src = 'https://nyami.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
       }
